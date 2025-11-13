@@ -9,6 +9,7 @@ import CommunityPage from './Pages/Community/CommunityPage'
 import ArticlesPage from './Pages/Articles/ArticlesPage'
 import NonAuthFooter from './Components/NonAuthFooter/NonAuthFooter'
 import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute'
+import { Navigate } from 'react-router-dom';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
     <BrowserRouter>
     <NonAuthNavBar/>
       <Routes>
+        <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path='/home' element={<HomePage/>}/>
         <Route path='/signup' element={<SignupPage/>}/>
         <Route path='/login' element={<LoginPage/>}/>
