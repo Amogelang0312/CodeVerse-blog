@@ -8,7 +8,7 @@ import LoginPage from './Pages/Login/LoginPage'
 import CommunityPage from './Pages/Community/CommunityPage'
 import ArticlesPage from './Pages/Articles/ArticlesPage'
 import NonAuthFooter from './Components/NonAuthFooter/NonAuthFooter'
-import ProtectedRoute from './Components/ProtectedRoute/protectedroute'
+import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute'
 
 function App() {
   return (
