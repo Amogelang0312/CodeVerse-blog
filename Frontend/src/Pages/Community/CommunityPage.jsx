@@ -25,7 +25,7 @@ function CommunityPage() {
     const loadPosts = async () => {
       try {
         console.log('Loading posts from database...');
-        const response = await fetch('http://localhost:5000/api/posts');
+        const response = await fetch('https://codeverse-dmcl.onrender.com/api/');
         const result = await response.json();
         
         console.log('All posts from API:', result);

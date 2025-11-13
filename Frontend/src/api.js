@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://codeverse-dmcl.onrender.com/api/';
 const getToken = () => localStorage.getItem('token');
 
 export const api = {

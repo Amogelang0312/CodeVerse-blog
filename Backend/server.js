@@ -9,7 +9,7 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:5175', 
-    'https://your-blog-app.vercel.app' 
+    'https://code-verse-blog-4v7a.vercel.app'  
   ],
   credentials: true
 }));
