@@ -1,0 +1,77 @@
+.login-container{
+    height:60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form-container{
+    border:none;
+    border-radius: 22px;
+    width: fit-content;
+    padding: 90px;
+}
+.login-container div{
+    margin-bottom: 20px;
+}
+.login-form-container div label{
+    display: block;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+.login-form-container div input{
+    width: 300px;
+    border: none;
+    padding: 10px;
+    background-color: rgb(209, 207, 207);
+    border-radius: 23px;
+}
+.login-form-container button{
+    border:none;
+    border-radius: 23px;
+    width: 210px;
+    height: 30px;
+    cursor: pointer;
+}
+.login-btn-container{
+    text-align: center;
+}
+.login-btn-container :hover{
+    background-color: black;
+    color: white;
+}
+.no-acc-container{
+    margin-top: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:black;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+}
+.no-acc-container a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+.no-acc-container a:hover{
+    color: blueviolet;
+}
+@media (max-width: 768px) {
+  .login-container,
+  .signup-container {
+    padding: 20px 15px;
+  }
+  
+  .login-form-container,
+  .signup-form-container {
+    padding: 20px;
+    margin: 0 10px;
+  }
+  
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    width: 100%;
+  }
+}

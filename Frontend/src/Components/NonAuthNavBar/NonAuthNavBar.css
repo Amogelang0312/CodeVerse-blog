@@ -1,0 +1,118 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 25px;
+    background-color: rgba(182, 181, 181, 0.1);
+    border-radius: 30px;
+    margin: 0 300px;
+}
+.main-nav-container{
+    width: 70%;
+}
+.logo-nav-container{
+    width: 30%;
+}
+/* .main-nav-container, .logo-nav-container{
+    background-color: gray;
+} */
+ .logo-nav-container h2{
+    margin-left: 20px;
+ }
+.main-nav-container ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+.main-nav-container ul a{
+    color:black;
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+}
+.main-nav-container ul a:hover{
+    border-bottom: 1px solid;
+}
+@media (max-width: 1024px) {
+    nav {
+        margin: 0 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        margin: 0 50px;
+        padding: 15px;
+        border-radius: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .main-nav-container {
+        width: 100%;
+    }
+    
+    .logo-nav-container {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .logo-nav-container h2 {
+        margin-left: 0;
+    }
+    
+    .main-nav-container ul {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .main-nav-container ul li {
+        flex: 1;
+        min-width: 120px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        margin: 0 20px;
+        padding: 12px;
+        border-radius: 15px;
+        gap: 12px;
+    }
+    
+    .main-nav-container ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .main-nav-container ul li {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .main-nav-container ul a {
+        display: block;
+        padding: 8px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 360px) {
+    nav {
+        margin: 0 10px;
+        padding: 10px;
+    }
+    
+    .logo-nav-container h2 {
+        font-size: 18px;
+    }
+    
+    .main-nav-container ul a {
+        font-size: 14px;
+        padding: 6px;
+    }
+}
